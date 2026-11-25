@@ -44,9 +44,8 @@
   .hero .names p { margin: 0; }
   .hero .jpname { font-size: 20px; font-weight: 500; letter-spacing: .3em; }
   .hero .title { font-size: 14px; letter-spacing: .28em; color: var(--muted); }
-  .hero .foot { padding-bottom: 28px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: .24em; color: var(--dim); }
-  .bar { height: 64px; background: #000; }
-
+  .hero .foot { padding-bottom: 28px; display: flex; justify-content: flex-end; font-size: 11px; letter-spacing: .24em; color: var(--dim); }
+  
   section { padding: clamp(80px, 10vw, 140px) var(--pad); }
   .split { display: flex; flex-wrap: wrap; gap: 40px 80px; }
   .split > .h2 { flex: 1 1 280px; }
@@ -71,7 +70,7 @@
   .watch { align-self: flex-start; margin-top: 8px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border: 1px solid var(--accent); font-size: 12px; letter-spacing: .2em; text-decoration: none; color: var(--accent); transition: background .2s, color .2s; }
   .watch:hover { background: var(--accent); color: #0b0b0c; }
   .work .date { flex: 0 0 auto; font-size: 14px; letter-spacing: .18em; color: var(--dim); padding-top: 8px; }
-  .work .still { flex: 1 1 400px; max-width: 440px; aspect-ratio: 2.39 / 1; overflow: hidden; background: #000; margin: 0; }
+  .work .still { flex: 1 1 360px; max-width: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: #000; margin: 0; }
   .work .still img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
   .work:hover .still img { transform: scale(1.04); }
 
@@ -164,9 +163,8 @@
       <p class="title">VIDEO CREATOR / CREATIVE PRODUCTION</p>
     </div>
   </div>
-  <div class="wrap foot fade d3"><span>2.39 : 1</span><span class="scroll-cue">SCROLL</span></div>
+  <div class="wrap foot fade d3"><span class="scroll-cue">SCROLL</span></div>
 </div>
-<div class="bar"></div>
 
 <section id="about" style="padding-bottom: 0;">
   <div class="wrap split">
