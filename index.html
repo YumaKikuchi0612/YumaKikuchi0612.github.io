@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YUMA KIKUCHI | VIDEO CREATOR / CREATIVE PRODUCTION</title>
+<meta name="description" content="菊地優馬（YUMA KIKUCHI）のポートフォリオ。ライブ配信・映像機材の運用、テロップ送出、カメラオペレーション。">
+<meta property="og:title" content="YUMA KIKUCHI | Portfolio">
+<meta property="og:description" content="VIDEO CREATOR / CREATIVE PRODUCTION">
+<meta property="og:image" content="images/02.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b0c; --bg2: #121214; --ink: #e8e4dc; --ink-hi: #f4f1ea;
+    --muted: #a8a39a; --dim: #8a857c; --line: #2c2b29; --accent: #d4a65a;
+    --pad: clamp(20px, 5vw, 64px);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+  a { color: var(--ink); }
+  a:hover { color: #fff; }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  .display { font-family: 'Bebas Neue', sans-serif; font-weight: 400; color: var(--ink-hi); margin: 0; }
+  .h2 { font-size: clamp(56px, 7vw, 96px); line-height: .9; letter-spacing: .04em; }
+  .label { font-size: 11px; letter-spacing: .24em; color: var(--dim); }
+  .jp { font-family: 'Noto Sans JP', sans-serif; }
+
+  header { height: 64px; background: #000; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 0 var(--pad); position: sticky; top: 0; z-index: 10; }
+  header .logo { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: .12em; text-decoration: none; }
+  header nav { display: flex; gap: 28px; flex-wrap: wrap; font-size: 12px; letter-spacing: .2em; }
+  header nav a { text-decoration: none; color: var(--muted); }
+  header nav a:hover { color: #fff; }
+
+  .hero { background: var(--bg2); padding: 0 var(--pad); }
+  .hero .inner { padding: clamp(96px, 14vw, 180px) 0 clamp(80px, 11vw, 150px); display: flex; flex-direction: column; gap: 28px; }
+  .kicker { display: flex; align-items: center; gap: 16px; font-size: 12px; letter-spacing: .3em; color: var(--accent); margin: 0; }
+  .kicker::before { content: ""; width: 40px; height: 1px; background: var(--accent); }
+  .hero h1 { font-size: clamp(72px, 13vw, 184px); line-height: .88; letter-spacing: .02em; }
+  .hero .names { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 32px; }
+  .hero .names p { margin: 0; }
+  .hero .jpname { font-size: 20px; font-weight: 500; letter-spacing: .3em; }
+  .hero .title { font-size: 14px; letter-spacing: .28em; color: var(--muted); }
+  .hero .foot { padding-bottom: 28px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: .24em; color: var(--dim); }
+  .bar { height: 64px; background: #000; }
+
+  section { padding: clamp(80px, 10vw, 140px) var(--pad); }
+  .split { display: flex; flex-wrap: wrap; gap: 40px 80px; }
+  .split > .h2 { flex: 1 1 280px; }
+  .split > .body { flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 36px; }
+  .about-text { display: flex; flex-direction: column; gap: 14px; font-size: clamp(16px, 1.45vw, 18px); line-height: 2; }
+  .about-text p { margin: 0; }
+  .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .facts div { border-top: 1px solid #3a3936; padding-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .facts .v { font-size: 16px; color: var(--ink-hi); }
+
+  .works-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 48px; }
+  .works-head p { margin: 0; font-size: 12px; letter-spacing: .24em; color: var(--dim); }
+  .work { border-top: 1px solid var(--line); padding: 36px 0; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: flex-start; }
+  .works-list { border-bottom: 1px solid var(--line); }
+  .work .no { flex: 0 0 72px; font-family: 'Bebas Neue', sans-serif; font-size: 44px; line-height: 1; color: var(--accent); }
+  .work .info { flex: 999 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+  .work h3 { margin: 0; font-size: clamp(22px, 2.4vw, 30px); font-weight: 500; line-height: 1.4; color: var(--ink-hi); }
+  .work .role { margin: 0; font-size: 13px; letter-spacing: .08em; color: var(--muted); }
+  .work .role span { color: var(--dim); letter-spacing: .2em; margin-right: 10px; }
+  .tags { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags li { font-size: 13px; color: #d6d1c7; border: 1px solid #3a3936; padding: 6px 12px; }
+  .watch { align-self: flex-start; margin-top: 8px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border: 1px solid var(--accent); font-size: 12px; letter-spacing: .2em; text-decoration: none; color: var(--accent); transition: background .2s, color .2s; }
+  .watch:hover { background: var(--accent); color: #0b0b0c; }
+  .work .date { flex: 0 0 auto; font-size: 14px; letter-spacing: .18em; color: var(--dim); padding-top: 8px; }
+  .work .still { flex: 1 1 400px; max-width: 440px; aspect-ratio: 2.39 / 1; overflow: hidden; background: #000; margin: 0; }
+  .work .still img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .work:hover .still img { transform: scale(1.04); }
+
+  .skills { background: var(--bg2); }
+  .skills .grid { flex: 2 1 480px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .skills .grid div { border-top: 1px solid var(--accent); padding-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .skills .grid .v { font-size: clamp(20px, 2.2vw, 28px); font-weight: 300; color: var(--ink-hi); }
+
+  .contact .inner { display: flex; flex-direction: column; gap: 28px; }
+  .contact h2 { font-size: clamp(48px, 8vw, 120px); line-height: .92; letter-spacing: .03em; }
+  .contact .lead { margin: 0; font-size: 15px; line-height: 1.9; color: var(--muted); }
+  .contact .links { display: flex; flex-wrap: wrap; gap: 16px; }
+  .btn { display: inline-flex; align-items: center; gap: 16px; min-height: 56px; padding: 0 28px; border: 1px solid var(--ink); font-size: clamp(15px, 1.6vw, 20px); letter-spacing: .06em; text-decoration: none; color: var(--ink-hi); word-break: break-all; transition: background .2s, color .2s; }
+  .btn:hover { background: var(--ink); color: #0b0b0c; }
+
+  footer { background: #000; padding: 28px var(--pad); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 11px; letter-spacing: .2em; color: var(--dim); }
+
+  @media (max-width: 600px) {
+    header nav { gap: 16px; }
+    .facts, .skills .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#top">YUMA KIKUCHI</a>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#works">WORKS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<div id="top" class="hero">
+  <div class="wrap inner">
+    <p class="kicker">PORTFOLIO — 2026</p>
+    <h1 class="display">YUMA<br>KIKUCHI</h1>
+    <div class="names">
+      <p class="jp jpname">菊地 優馬</p>
+      <p class="title">VIDEO CREATOR / CREATIVE PRODUCTION</p>
+    </div>
+  </div>
+  <div class="wrap foot"><span>2.39 : 1</span><span>SCROLL ↓</span></div>
+</div>
+<div class="bar"></div>
+
+<section id="about" style="padding-bottom: 0;">
+  <div class="wrap split">
+    <h2 class="display h2">ABOUT</h2>
+    <div class="body">
+      <div class="about-text jp">
+        <p>ライブ配信や映像機材の運用を得意とし、イベントや公演の現場で、テロップ送出・カメラオペレーション・配信オペレーションなど、映像演出を支える業務に携わっています。</p>
+        <p>これまでの現場経験を通じて、機材の確実な運用だけでなく、チームとの連携や円滑な進行を大切にしてきました。</p>
+        <p>一人ひとりの役割を活かし、チーム全体で一体感を持ってイベントを創り上げることを大切にしています。</p>
+      </div>
+      <div class="facts">
+        <div><span class="label">AFFILIATION</span><span class="v jp">工学院大学 情報学部</span></div>
+        <div><span class="label">SPECIALTY</span><span class="v jp">ライブ配信・映像機材</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="works-head">
+      <h2 class="display h2">WORKS</h2>
+      <p>SELECTED PROJECTS 2026</p>
+    </div>
+    <div class="works-list">
+
+      <article class="work">
+        <div class="no">01</div>
+        <div class="info">
+          <h3 class="jp">第30回 ドレミファダンスコンサート</h3>
+          <p class="role"><span>ROLE</span>SuperImposer / Design</p>
+          <ul class="tags jp"><li>テロップ制作・送出</li><li>VTR送出</li><li>蓋絵デザイン</li></ul>
+          <a class="watch" href="https://www.youtube.com/live/c72rRZ5GOEY" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1 L11 6 L2 11 Z" fill="currentColor"/></svg>WATCH ON YOUTUBE</a>
+        </div>
+        <div class="date">2026.11.01</div>
+        <figure class="still"><img src="images/01.jpg" alt="第30回 ドレミファダンスコンサート" style="object-position: center 45%;" loading="lazy"></figure>
+      </article>
+
+      <article class="work">
+        <div class="no">02</div>
+        <div class="info">
+          <h3 class="jp">MIHIKO ART SHOW</h3>
+          <p class="role"><span>ROLE</span>Video Director / Live Streaming / Camera Operation / Video Production</p>
+        </div>
+        <div class="date">2026.11.07</div>
+        <figure class="still"><img src="images/02.jpg" alt="MIHIKO ART SHOW" style="object-position: center 25%;" loading="lazy"></figure>
+      </article>
+
+      <article class="work">
+        <div class="no">03</div>
+        <div class="info">
+          <h3 class="jp">津田塾大学 DanceNuts 公演</h3>
+          <p class="role"><span>ROLE</span>Production Designer</p>
+        </div>
+        <div class="date">2026.10.17</div>
+        <figure class="still"><img src="images/03.jpg" alt="津田塾大学 DanceNuts 公演" style="object-position: center 30%;" loading="lazy"></figure>
+      </article>
+
+      <article class="work">
+        <div class="no">04</div>
+        <div class="info">
+          <h3 class="jp">自主制作映画「あと五分」</h3>
+          <p class="role"><span>ROLE</span>Sound Recording</p>
+        </div>
+        <div class="date">2026.07.25</div>
+        <figure class="still"><img src="images/04.jpg" alt="自主制作映画「あと五分」撮影現場" style="object-position: center 62%;" loading="lazy"></figure>
+      </article>
+
+      <article class="work">
+        <div class="no">05</div>
+        <div class="info">
+          <h3 class="jp">第29回 ドレミファダンスコンテスト</h3>
+          <p class="role"><span>ROLE</span>SuperImposer / Design</p>
+          <ul class="tags jp"><li>テロップ制作・送出</li><li>VTR送出</li><li>蓋絵デザイン</li></ul>
+          <a class="watch" href="https://www.youtube.com/live/Mqp591EXdPE" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1 L11 6 L2 11 Z" fill="currentColor"/></svg>WATCH ON YOUTUBE</a>
+        </div>
+        <div class="date">2026.06.14</div>
+        <figure class="still"><img src="images/05.jpg" alt="第29回 ドレミファダンスコンテスト" style="object-position: center 55%;" loading="lazy"></figure>
+      </article>
+
+      <article class="work">
+        <div class="no">06</div>
+        <div class="info">
+          <h3 class="jp">四谷ミスコン</h3>
+          <p class="role"><span>ROLE</span>SuperImposer / Technical Director</p>
+        </div>
+        <div class="date">2026.11.14</div>
+        <figure class="still"><img src="images/06.jpg" alt="四谷ミスコン" style="object-position: center 42%;" loading="lazy"></figure>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="wrap split">
+    <h2 class="display h2">SKILLS</h2>
+    <div class="grid">
+      <div><span class="label">EDIT</span><span class="v">Premiere Pro</span></div>
+      <div><span class="label">MOTION / DESIGN</span><span class="v">After Effects</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap inner">
+    <p class="kicker">CONTACT</p>
+    <h2 class="display">LET'S MAKE<br>SOMETHING.</h2>
+    <p class="lead jp">映像制作・ライブ配信・テロップ／デザインのご相談はメールでお気軽にどうぞ。</p>
+    <div class="links">
+      <a class="btn" href="mailto:yuumadao97@gmail.com">yuumadao97@gmail.com <span aria-hidden="true">→</span></a>
+      <!-- Instagram: 下の行の YOUR_ID を自分のIDに変え、行の先頭と末尾のコメント記号を消すと表示されます -->
+      <!-- <a class="btn" href="https://www.instagram.com/YOUR_ID/" target="_blank" rel="noopener">Instagram @YOUR_ID <span aria-hidden="true">→</span></a> -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 YUMA KIKUCHI</span>
+  <span>VIDEO CREATOR / CREATIVE PRODUCTION</span>
+</footer>
+
+</body>
+</html>
