@@ -49,6 +49,10 @@
   section { padding: clamp(80px, 10vw, 140px) var(--pad); }
   .split { display: flex; flex-wrap: wrap; gap: 40px 80px; }
   .split > .h2 { flex: 1 1 280px; }
+  .about-side { flex: 1 1 280px; display: flex; flex-direction: column; gap: 40px; }
+  .portrait { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; background: #000; max-width: 420px; }
+  .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 70% 40%; filter: grayscale(1); }
+  @media (max-width: 760px) { .portrait { aspect-ratio: 3 / 2; max-width: none; } }
   .split > .body { flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 36px; }
   .about-text { display: flex; flex-direction: column; gap: 14px; font-size: clamp(16px, 1.45vw, 18px); line-height: 2; }
   .about-text p { margin: 0; }
@@ -100,6 +104,10 @@
   .org-text { display: flex; flex-direction: column; gap: 6px; }
   .org-text .v { font-size: 18px; color: var(--ink-hi); }
   .org-text .d { font-size: 13px; color: var(--muted); line-height: 1.8; }
+  .mx-link { align-self: flex-start; margin-top: 10px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border: 1px solid #E8A33D; color: #E8A33D; font-size: 12px; letter-spacing: .16em; text-decoration: none; transition: background .2s, color .2s; }
+  .mx-link:hover { background: #E8A33D; color: #0B0B0C; }
+  .rep-link { text-decoration: none; border-bottom: 1px solid rgba(232,163,61,.5); }
+  .rep-link:hover { border-bottom-color: #E8A33D; }
   .hero .rep { font-size: 13px; letter-spacing: .2em; color: var(--muted); margin: 0; }
   .hero .rep b { color: #E8A33D; font-weight: 500; }
 
@@ -177,14 +185,17 @@
       <p class="jp jpname">菊地 優馬</p>
       <p class="title">VIDEO CREATOR / CREATIVE PRODUCTION</p>
     </div>
-    <p class="rep fade d2">REPRESENTATIVE, <b>MONTTEX DIRECTION</b></p>
+    <p class="rep fade d2">REPRESENTATIVE, <a class="rep-link" href="https://claude.ai/artifact/T1bBj3eFjGUgJjZxDbydGf" target="_blank" rel="noopener"><b>MONTTEX DIRECTION</b></a></p>
   </div>
   <div class="wrap foot fade d3"><span class="scroll-cue">SCROLL</span></div>
 </div>
 
 <section id="about" style="padding-bottom: 0;">
   <div class="wrap split">
-    <h2 class="display h2">ABOUT</h2>
+    <div class="about-side">
+      <h2 class="display h2">ABOUT</h2>
+      <figure class="portrait"><img src="images/yuma.jpg" alt="カメラを構える菊地優馬" loading="lazy"></figure>
+    </div>
     <div class="body">
       <div class="about-text jp">
         <p>ライブ配信や映像機材の運用を得意とし、イベントや公演の現場で、テロップ送出・カメラオペレーション・配信オペレーションなど、映像演出を支える業務に携わっています。</p>
@@ -196,18 +207,20 @@
         <div><span class="label">SPECIALTY</span><span class="v jp">ライブ配信・映像機材</span></div>
       </div>
       <div class="org">
-        <div class="mx" role="img" aria-label="MONTTEX Direction ロゴ">
+        <a class="mx" href="https://claude.ai/artifact/T1bBj3eFjGUgJjZxDbydGf" target="_blank" rel="noopener" aria-label="MONTTEX Direction のサイトへ">
           <div class="mx-word" aria-hidden="true">
             <span>MON</span>
             <span class="mx-tt"><span class="mx-holes t"><i></i><i></i><i></i><i></i></span>TT<span class="mx-holes b"><i></i><i></i><i></i><i></i></span></span>
             <span>EX</span>
           </div>
           <div class="mx-sub" aria-hidden="true">DIRECTION</div>
-        </div>
+        </a>
         <div class="org-text">
           <span class="label">FOUNDER / REPRESENTATIVE</span>
           <span class="v jp">MONTTEX Direction 代表</span>
           <span class="d jp">学外のメンバーも参加できる映像クリエイター集団</span>
+          <!-- MONTTEXのサイトURL（GitHub Pagesで公開したら差し替え） -->
+          <a class="mx-link" href="https://claude.ai/artifact/T1bBj3eFjGUgJjZxDbydGf" target="_blank" rel="noopener">MONTTEX DIRECTION のサイトへ <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -322,7 +335,7 @@
 <script>
   (function () {
     var targets = document.querySelectorAll(
-      'section .h2, .about-text p, .facts > div, .org, .works-head p, .work, .skills .grid > div, .contact .inner > *'
+      'section .h2, .portrait, .about-text p, .facts > div, .org, .works-head p, .work, .skills .grid > div, .contact .inner > *'
     );
     targets.forEach(function (el) {
       el.classList.add('reveal');
