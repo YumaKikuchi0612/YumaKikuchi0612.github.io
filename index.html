@@ -88,6 +88,21 @@
 
   footer { background: #000; padding: 28px var(--pad); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 11px; letter-spacing: .2em; color: var(--dim); }
 
+  /* ===== MONTTEX logo ===== */
+  .org { border: 1px solid #2c2b29; background: #111113; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px; }
+  .mx { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; color: var(--ink-hi); }
+  .mx-word { display: flex; align-items: center; font-family: 'Bebas Neue', sans-serif; font-size: 60px; line-height: 1; letter-spacing: .04em; }
+  .mx-tt { position: relative; background: #E8A33D; color: #0B0B0C; padding: 12px 6px 8px; margin: 0 4px; display: flex; }
+  .mx-holes { position: absolute; left: 5px; right: 5px; display: flex; justify-content: space-between; }
+  .mx-holes.t { top: 3px; } .mx-holes.b { bottom: 2px; }
+  .mx-holes i { width: 6px; height: 5px; background: #0B0B0C; border-radius: 1px; }
+  .mx-sub { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: .6em; padding-left: .6em; color: #C9C4BC; }
+  .org-text { display: flex; flex-direction: column; gap: 6px; }
+  .org-text .v { font-size: 18px; color: var(--ink-hi); }
+  .org-text .d { font-size: 13px; color: var(--muted); line-height: 1.8; }
+  .hero .rep { font-size: 13px; letter-spacing: .2em; color: var(--muted); margin: 0; }
+  .hero .rep b { color: #E8A33D; font-weight: 500; }
+
   /* ===== Animations ===== */
   .hero { position: relative; overflow: hidden; }
   .shutter { position: absolute; left: 0; right: 0; height: 50%; background: #000; z-index: 2; pointer-events: none; }
@@ -162,6 +177,7 @@
       <p class="jp jpname">菊地 優馬</p>
       <p class="title">VIDEO CREATOR / CREATIVE PRODUCTION</p>
     </div>
+    <p class="rep fade d2">REPRESENTATIVE, <b>MONTTEX DIRECTION</b></p>
   </div>
   <div class="wrap foot fade d3"><span class="scroll-cue">SCROLL</span></div>
 </div>
@@ -178,6 +194,21 @@
       <div class="facts">
         <div><span class="label">AFFILIATION</span><span class="v jp">工学院大学 情報学部</span></div>
         <div><span class="label">SPECIALTY</span><span class="v jp">ライブ配信・映像機材</span></div>
+      </div>
+      <div class="org">
+        <div class="mx" role="img" aria-label="MONTTEX Direction ロゴ">
+          <div class="mx-word" aria-hidden="true">
+            <span>MON</span>
+            <span class="mx-tt"><span class="mx-holes t"><i></i><i></i><i></i><i></i></span>TT<span class="mx-holes b"><i></i><i></i><i></i><i></i></span></span>
+            <span>EX</span>
+          </div>
+          <div class="mx-sub" aria-hidden="true">DIRECTION</div>
+        </div>
+        <div class="org-text">
+          <span class="label">FOUNDER / REPRESENTATIVE</span>
+          <span class="v jp">MONTTEX Direction 代表</span>
+          <span class="d jp">学外のメンバーも参加できる映像クリエイター集団</span>
+        </div>
       </div>
     </div>
   </div>
@@ -290,7 +321,7 @@
 <script>
   (function () {
     var targets = document.querySelectorAll(
-      'section .h2, .about-text p, .facts > div, .works-head p, .work, .skills .grid > div, .contact .inner > *'
+      'section .h2, .about-text p, .facts > div, .org, .works-head p, .work, .skills .grid > div, .contact .inner > *'
     );
     targets.forEach(function (el) {
       el.classList.add('reveal');
